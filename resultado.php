@@ -47,12 +47,12 @@ $custo_efetivo_total = $custo_parcela_com_juros * $parcelas + $tarifa + $imposto
     <main>
         <div class="bloco">
             <h1>Resultado do Simulador de Empréstimo</h1>
-            <p><label>Nome:</label> <?php echo $nome; ?></p>
-            <p><label>Cliente:</label> <?php echo $cliente; ?></p>
-            <p><label>Quantidade de parcelas:</label> <?php echo $parcelas; ?></p>
-            <p><label>Valor das parcelas:</label> <?php echo number_format($custo_parcela_com_juros, 2); ?></p>
-            <p><label>Taxa de Juros:</label> <?php echo number_format($taxa_juros, 1); ?></p>
-            <p><label>Custo Efetivo Total:</label> <?php echo number_format($custo_efetivo_total, 2); ?></p>
+            <p><label>Nome:</label> <?= $nome; ?></p>
+            <p><label>Cliente:</label> <?= $cliente; ?></p>
+            <p><label>Quantidade de parcelas:</label> <?= $parcelas; ?></p>
+            <p><label>Valor das parcelas:</label> <?= number_format($custo_parcela_com_juros, 2); ?></p>
+            <p><label>Taxa de Juros:</label> <?= number_format($taxa_juros, 1); ?></p>
+            <p><label>Custo Efetivo Total:</label> <?= number_format($custo_efetivo_total, 2); ?></p>
 
             <a href="index.php">Voltar</a>
         </div>
