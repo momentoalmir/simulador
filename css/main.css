@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292A30;
+    font-family: 'Golos Text', sans-serif;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bloco {
+    backdrop-filter: blur(5px);
+    background-color: #1e8563;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.bloco h1 {
+    margin-bottom: 1rem;
+}
+
+.bloco label {
+    font-weight: bold;
+}
+
+.bloco p {
+    margin: .5rem 0;
+}
+
+.bloco a {
+    color: #fff;
+}
+
+.bloco input[type="text"], .bloco input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+}
+
+.bloco input[type="number"]::-webkit-inner-spin-button, .bloco input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.bloco input::placeholder {
+    color: #fff;
+}
+
+.bloco select {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: .5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+}
+
+.bloco select option {
+    background-color: #1e8563;
+    color: #fff;
+}
+
+.bloco input[type="checkbox"] {
+    transform: scale(1.5);
+    margin: 0 .5rem 0 0;
+    cursor: pointer;
+}
+
+.bloco input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #fff;
+    color: #1e8563;
+    outline: none;
+    cursor: pointer;
+}
+
+.bloco input[type="radio"] {
+    transform: scale(1.5);
+    margin: .5rem;
+    cursor: pointer;
+}
